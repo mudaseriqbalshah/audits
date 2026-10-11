@@ -17,6 +17,10 @@ Independent smart contract security reviews by **Mudaser Iqbal (Crypto Hawking)*
 | 7 | Spark sDAI | Yield | Ethereum | 2026-10-07 | Medium | 4 | [PDF](reports/2026-10-07-spark-sdai.pdf) |
 | 8 | Chainlink ETH/USD Aggregator Proxy | Oracle | Ethereum | 2026-10-07 | High | 5 | [PDF](reports/2026-10-07-chainlink-eth-usd.pdf) |
 | 9 | OpenSea Seaport 1.6 | NFT marketplace | Ethereum | 2026-10-07 | Low | 6 | [PDF](reports/2026-10-07-seaport-1-6.pdf) |
+| 10 | FermiSwap (FermiSwapper) | DEX router | Ethereum | 2026-10-11 | High | 10 | [PDF](reports/2026-10-11-fermiswap.pdf) |
+| 11 | SATO (SatoHook) | Uniswap v4 hook | Ethereum | 2026-10-12 | Medium | 8 | [PDF](reports/2026-10-12-sato.pdf) |
+
+Note on #10: the High rating is a centralization finding, an unrestricted arbitrary-call function held by a single immutable key, combined with the router holding user ERC-20 allowances. No exploitable bug was found in the swap logic itself.
 
 Note on #8: the High rating reflects the well-known owner-controlled aggregator rotation in Chainlink's proxy pattern (a centralization/key-compromise risk documented in the report), not a newly discovered exploit.
 
