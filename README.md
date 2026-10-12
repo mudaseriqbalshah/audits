@@ -19,6 +19,7 @@ Independent smart contract security reviews by **Mudaser Iqbal (Crypto Hawking)*
 | 9 | OpenSea Seaport 1.6 | NFT marketplace | Ethereum | 2026-10-07 | Low | 6 | [PDF](reports/2026-10-07-seaport-1-6.pdf) |
 | 10 | FermiSwap (FermiSwapper) | DEX router | Ethereum | 2026-10-11 | High | 10 | [PDF](reports/2026-10-11-fermiswap.pdf) |
 | 11 | SATO (SatoHook) | Uniswap v4 hook | Ethereum | 2026-10-12 | Medium | 8 | [PDF](reports/2026-10-12-sato.pdf) |
+| 12 | 3F (WrappedAsset) | Asset wrapper, leveraged farming | Ethereum | 2026-10-12 | High | 8 | [PDF](reports/2026-10-12-3f.pdf) |
 
 Note on #10: the High rating is a centralization finding, an unrestricted arbitrary-call function held by a single immutable key, combined with the router holding user ERC-20 allowances. No exploitable bug was found in the swap logic itself.
 
