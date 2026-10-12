@@ -24,6 +24,10 @@ Note on #10: the High rating is a centralization finding, an unrestricted arbitr
 
 Note on #8: the High rating reflects the well-known owner-controlled aggregator rotation in Chainlink's proxy pattern (a centralization/key-compromise risk documented in the report), not a newly discovered exploit.
 
+## Methodology
+
+[**The Contract Layer Trust Checklist**](CONTRACT-TRUST-CHECKLIST.md), seven questions you can answer yes or no from the source, each mapped to a real loss. This is the lens every review in this repository is written through.
+
 ## Responsible disclosure
 
 If a review uncovers an unpatched vulnerability that endangers live user funds, the report is **withheld** and the finding is disclosed privately to the project team first. Reports appear here only when publication creates no exploit risk.
