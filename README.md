@@ -20,6 +20,9 @@ Independent smart contract security reviews by **Mudaser Iqbal (Crypto Hawking)*
 | 10 | FermiSwap (FermiSwapper) | DEX router | Ethereum | 2026-10-11 | High | 10 | [PDF](reports/2026-10-11-fermiswap.pdf) |
 | 11 | SATO (SatoHook) | Uniswap v4 hook | Ethereum | 2026-10-12 | Medium | 8 | [PDF](reports/2026-10-12-sato.pdf) |
 | 12 | 3F (WrappedAsset) | Asset wrapper, leveraged farming | Ethereum | 2026-10-12 | High | 8 | [PDF](reports/2026-10-12-3f.pdf) |
+| 13 | Aave v3 Pool (PoolInstance) | Lending | Ethereum | 2026-10-20 | High | 5 | [PDF](reports/2026-10-20-aave-v3-pool.pdf) |
+
+Note on #13: no exploitable flaw was found in Aave v3's supply, borrow, repay, flash loan or liquidation arithmetic, and the position manager delegation added after v3.3 is recorded as a reference implementation of bounded delegation. The High rating is centralization only: reserve configuration, which carries the liquidation threshold that decides who is liquidatable, is assigned as an unvalidated packed word effective in the same block, and the liquidation grace period accepts any future timestamp with no ceiling. Both are deliberate, both sit behind Aave governance, and neither bound is expressed in the Pool contract itself.
 
 Note on #10: the High rating is a centralization finding, an unrestricted arbitrary-call function held by a single immutable key, combined with the router holding user ERC-20 allowances. No exploitable bug was found in the swap logic itself.
 
